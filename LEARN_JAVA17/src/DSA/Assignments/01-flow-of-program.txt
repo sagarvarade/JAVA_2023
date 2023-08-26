@@ -1,0 +1,35 @@
+[Video Link](https://youtu.be/lhELGQAV4gg)
+
+## Create flowchart and pseudocode for the following:
+
+1. Input a year and find whether it is a leap year or not.
+2. Take two numbers and print the sum of both.
+3. Take a number as input and print the multiplication table for it.
+4. Take 2 numbers as inputs and find their HCF and LCM.
+5. Keep taking numbers as inputs till the user enters X, after that print sum of all.
+
+1. McKinsey & Company
+2. ThoughtWorks
+3. The Boston Consulting Group
+4. Gartner
+5. Bain & Company
+6. Rolls Royce
+7. ZS Associates
+8. Google
+9. Stryker
+10. HubSpot
+11. Paycom
+12. Vistaprint
+13. Teach For America
+14. Procter & Gamble
+15. Avaya
+16. Microsoft
+17. BlackRock
+18. Sapient
+19. Citrix
+20. Nvidia
+21. Informatica
+22. Facebook
+23. Guidewire
+24. Caterpillar
+25. Rackspace
