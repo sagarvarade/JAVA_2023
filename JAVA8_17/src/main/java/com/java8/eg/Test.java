@@ -1,14 +1,26 @@
 package com.java8.eg;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
 
 	public static void main(String[] args) {
-		 ArrayList<String> l1=new ArrayList<String>();
-		 l1.add("ss");l1.add("xx");
-		 
+		List<String> names=Data.getRandomName(10);
+		for(String x1:names) {
+			System.out.println(x1);
+		}
+		
+		List<String> surNames=Data.getRandomSurName(10);
+		for(String x1:surNames) {
+			System.out.println(x1);
+		}
+		
+		List<String> fullNames=Data.getRandomFullName(10);
+		for(String x1:fullNames) {
+			System.out.println(x1);
+		}
+		
+		
 	}
 
 }
