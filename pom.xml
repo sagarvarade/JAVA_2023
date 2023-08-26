@@ -11,6 +11,7 @@
 	<modules>
 	<module>LEARN_JAVA17</module>
 	<module>DESIGN_PATTERNS</module>
+	<module>JAVA8_17</module>
 	</modules>
 
 </project>
