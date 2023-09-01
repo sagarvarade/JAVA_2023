@@ -4,7 +4,60 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Data {
+import com.java8.eg.Records.fullName;
+
+public final class Data {
+
+	public static List<Integer> getRandomeNumbers(int count) {
+		List<Integer> listOfNumbers = new ArrayList<Integer>();
+		for (int i = 0; i < count; i++) {
+			Random random = new Random();
+			listOfNumbers.add(random.nextInt(1000));
+		}
+		return listOfNumbers;
+	}
+
+	public static List<fullName> getFullNameRecords(int count) {
+		List<fullName> listOfNames = new ArrayList<fullName>();
+		for (int i = 0; i < count; i++) {
+			Random random = new Random();
+			int randomName = random.nextInt(1000);
+			int randomSurName = random.nextInt(1000);
+			listOfNames.add(new fullName(names[randomName], surnames[randomSurName]));
+		}
+		return listOfNames;
+	}
+
+	public static List<String> getRandomName(int count) {
+		List<String> listOfNames = new ArrayList<String>();
+		for (int i = 0; i < count; i++) {
+			Random random = new Random();
+			int randomName = random.nextInt(1000);
+			listOfNames.add(names[randomName]);
+		}
+		return listOfNames;
+	}
+
+	public static List<String> getRandomSurName(int count) {
+		List<String> listOfNames = new ArrayList<String>();
+		for (int i = 0; i < count; i++) {
+			Random random = new Random();
+			int randomName = random.nextInt(1000);
+			listOfNames.add(surnames[randomName]);
+		}
+		return listOfNames;
+	}
+
+	public static List<String> getRandomFullName(int count) {
+		List<String> listOfNames = new ArrayList<String>();
+		for (int i = 0; i < count; i++) {
+			Random random = new Random();
+			int randomName = random.nextInt(1000);
+			int randomSurName = random.nextInt(1000);
+			listOfNames.add(names[randomName] + " " + surnames[randomSurName]);
+		}
+		return listOfNames;
+	}
 
 	private final static String[] names = new String[] { "Naomi", "Shannon", "Eliel", "Ahmed", "Jolie", "Morris",
 			"Christian", "Burke", "Vera", "Blanchard", "Adler", "Henderson", "Maria", "Horne", "Zev", "Guerrero",
@@ -292,36 +345,5 @@ public class Data {
 			"Ferrell", "Farmer", "Brooks", "Buck", "Gill", "Cruz", "Turner", "Owen", "Jimenez", "Wiggins", "Liu",
 			"Davidson", "Suarez", "Rich", "Rivas", "Dominguez", "Lopez", "Coffey", "Huber", "Velazquez", "Conrad",
 			"Burgess", "Stephenson", "Davila", "Porter", "Knox" };
-
-	public static List<String> getRandomName(int count) {
-		List<String> listOfNames = new ArrayList<String>();
-		for (int i = 0; i < count; i++) {
-			Random random = new Random();
-			int randomName = random.nextInt(1000);
-			listOfNames.add(names[randomName]);
-		}
-		return listOfNames;
-	}
-
-	public static List<String> getRandomSurName(int count) {
-		List<String> listOfNames = new ArrayList<String>();
-		for (int i = 0; i < count; i++) {
-			Random random = new Random();
-			int randomName = random.nextInt(1000);
-			listOfNames.add(surnames[randomName]);
-		}
-		return listOfNames;
-	}
-
-	public static List<String> getRandomFullName(int count) {
-		List<String> listOfNames = new ArrayList<String>();
-		for (int i = 0; i < count; i++) {
-			Random random = new Random();
-			int randomName = random.nextInt(1000);
-			int randomSurName = random.nextInt(1000);
-			listOfNames.add(names[randomName] + " " + surnames[randomSurName]);
-		}
-		return listOfNames;
-	}
 
 }
