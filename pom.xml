@@ -9,9 +9,10 @@
 	<name>JAVA_2023</name>
 	<description>JAVA_2023</description>
 	<modules>
-	<module>LEARN_JAVA17</module>
-	<module>DESIGN_PATTERNS</module>
-	<module>JAVA8_17</module>
+		<module>LEARN_JAVA17</module>
+		<module>DESIGN_PATTERNS</module>
+		<module>JAVA8_17</module>
+		<module>XML_XSL_2_JAVA</module>
 	</modules>
 
 </project>
