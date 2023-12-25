@@ -13,6 +13,7 @@
 		<module>DESIGN_PATTERNS</module>
 		<module>JAVA8_17</module>
 		<module>XML_XSL_2_JAVA</module>
+		<module>SBApplication</module>
 	</modules>
 
 </project>
