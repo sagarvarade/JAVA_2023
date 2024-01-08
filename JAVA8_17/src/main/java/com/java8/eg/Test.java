@@ -19,7 +19,14 @@ public class Test {
 		// checkMethods();
 
 		// predicateTest();
-		functionsTest();
+		//functionsTest();
+		
+		FuncInterf fn = () -> {
+			System.out.println("Heelo");
+		};
+		
+		System.out.println(fn.sqrt(4));;
+		
 
 	}
 
@@ -78,9 +85,14 @@ public class Test {
 	}
 
 	private static void predicateTest() {
+		
 		FuncInterf fn = () -> {
 			System.out.println("Heelo");
 		};
+		
+		fn.sqrt(4);
+		
+		
 		FuncInterf fn2 = () -> System.out.println("Heelo");
 		fn.func();
 		fn2.func();

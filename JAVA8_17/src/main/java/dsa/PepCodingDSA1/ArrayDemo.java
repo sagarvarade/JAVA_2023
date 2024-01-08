@@ -21,11 +21,23 @@ public class ArrayDemo {
 		 //    diffOfTwoArrays();  //Not working
 			
 		 // Batching on array
-			batchingOnArray();
+			//batchingOnArray();
+		aryDemo();
 	}
 
 	
 	
+	private static void aryDemo() {
+		int [] x=new int[] {2,3,4};
+		//int [] y=x;
+		int [] y=x.clone();
+		System.out.println(Arrays.toString(x)+"    "+Arrays.toString(y));
+		x[1]=5;
+		System.out.println(Arrays.toString(x)+"    "+Arrays.toString(y));
+	}
+
+
+
 	private static void batchingOnArray() {
 		int [] ary=new int[] {1,2,12,3,1,4,5,7,1,3,4,667,235,55,36,73,45,256,2,466,2345,6,224,6445,22,235,22,75,23};
 		int batchSize=6;
