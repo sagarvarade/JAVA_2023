@@ -1,3 +1,4 @@
+https://github.com/winterbe/java8-tutorial
 Table of Contents
 Default Methods for Interfaces
 Lambda expressions
@@ -192,6 +193,10 @@ Remember the formula example from the first section? Interface Formula defines a
 Default methods cannot be accessed from within lambda expressions. The following code does not compile:
 
 Formula formula = (a) -> sqrt(a * 100);
+
+
+
+
 Built-in Functional Interfaces
 The JDK 1.8 API contains many built-in functional interfaces. Some of them are well known from older versions of Java like Comparator or Runnable. Those existing interfaces are extended to enable Lambda support via the @FunctionalInterface annotation.
 
