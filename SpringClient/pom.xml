@@ -1,16 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>SpringClient</artifactId>
+
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 		<spring-cloud.version>2022.0.1</spring-cloud.version>
 	</properties>
-	<modelVersion>4.0.0</modelVersion>
-	<artifactId>SBApplication</artifactId>
-	<groupId>com.SBApplication.App</groupId>
+	<groupId>com.SpringClient.App</groupId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SBApplication</name>
+	<name>SpringClient</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
