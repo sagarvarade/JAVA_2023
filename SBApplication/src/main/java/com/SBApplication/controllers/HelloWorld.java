@@ -20,7 +20,7 @@ public class HelloWorld {
 	{
 		return "Hello";
 	}
-	
+
 	@RequestMapping(method = RequestMethod.GET,value = "getpropvalues")
 	public String getPropValues() {
 		System.out.println(propValues.getName()+"  "+propValues.getSurname());
