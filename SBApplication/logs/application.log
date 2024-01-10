@@ -33,3 +33,109 @@
 2024-01-10 18:23:01.353 ERROR 25140 --- [http-nio-8100-exec-1] c.S.controllers.LogController            : Log level: ERROR
 2024-01-10 18:23:01.353  WARN 25140 --- [http-nio-8100-exec-1] c.S.controllers.LogController            : Log level: WARN
 2024-01-10 21:57:00.553  WARN 25140 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h25m8s59ms320µs901ns).
+2024-01-10 22:40:18.849  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Starting Application using Java 17.0.9 on SAVARADEMOBW10 with PID 8064 (C:\Sagar_2023\JAVA_2023\SBApplication\target\classes started by svarade in C:\Sagar_2023\JAVA_2023\SBApplication)
+2024-01-10 22:40:18.851  INFO 8064 --- [restartedMain] com.SBApplication.Application            : No active profile set, falling back to 1 default profile: "default"
+2024-01-10 22:40:18.925  INFO 8064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-10 22:40:18.926  INFO 8064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-10 22:40:20.020  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-10 22:40:20.157  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interfaces.
+2024-01-10 22:40:21.111  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2024-01-10 22:40:21.124  INFO 8064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-10 22:40:21.125  INFO 8064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2024-01-10 22:40:21.360  INFO 8064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-10 22:40:21.360  INFO 8064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2433 ms
+2024-01-10 22:40:21.708  INFO 8064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-10 22:40:21.780  INFO 8064 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2024-01-10 22:40:22.001  INFO 8064 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-10 22:40:22.132  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-10 22:40:22.408  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-10 22:40:22.422  INFO 8064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-01-10 22:40:23.371  INFO 8064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-10 22:40:23.381  INFO 8064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:40:23.796  WARN 8064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-10 22:40:24.093  WARN 8064 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-01-10 22:40:24.311  WARN 8064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-01-10 22:40:24.319  INFO 8064 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-10 22:40:24.473  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2024-01-10 22:40:24.495  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Started Application in 6.215 seconds (JVM running for 7.061)
+2024-01-10 22:40:36.332  INFO 8064 --- [http-nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-10 22:40:36.332  INFO 8064 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-10 22:40:36.334  INFO 8064 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-10 22:41:12.939  INFO 8064 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:41:12.986  INFO 8064 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-10 22:41:13.000  INFO 8064 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-10 22:41:13.136  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Starting Application using Java 17.0.9 on SAVARADEMOBW10 with PID 8064 (C:\Sagar_2023\JAVA_2023\SBApplication\target\classes started by svarade in C:\Sagar_2023\JAVA_2023\SBApplication)
+2024-01-10 22:41:13.136  INFO 8064 --- [restartedMain] com.SBApplication.Application            : No active profile set, falling back to 1 default profile: "default"
+2024-01-10 22:41:13.577  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-10 22:41:13.595  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2024-01-10 22:41:13.726  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2024-01-10 22:41:13.727  INFO 8064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-10 22:41:13.727  INFO 8064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2024-01-10 22:41:13.810  INFO 8064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-10 22:41:13.810  INFO 8064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2024-01-10 22:41:13.900  INFO 8064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-10 22:41:13.907  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-10 22:41:13.915  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-10 22:41:13.915  INFO 8064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-01-10 22:41:14.129  INFO 8064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-10 22:41:14.130  INFO 8064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:41:14.242  WARN 8064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-10 22:41:14.328  WARN 8064 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-01-10 22:41:14.385  WARN 8064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-01-10 22:41:14.390  INFO 8064 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-10 22:41:14.416  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2024-01-10 22:41:14.423  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Started Application in 1.34 seconds (JVM running for 56.988)
+2024-01-10 22:41:14.426  INFO 8064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-10 22:41:17.896  INFO 8064 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:41:17.898  INFO 8064 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-01-10 22:41:17.902  INFO 8064 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-01-10 22:41:18.005  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Starting Application using Java 17.0.9 on SAVARADEMOBW10 with PID 8064 (C:\Sagar_2023\JAVA_2023\SBApplication\target\classes started by svarade in C:\Sagar_2023\JAVA_2023\SBApplication)
+2024-01-10 22:41:18.006  INFO 8064 --- [restartedMain] com.SBApplication.Application            : No active profile set, falling back to 1 default profile: "default"
+2024-01-10 22:41:18.361  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-10 22:41:18.375  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2024-01-10 22:41:18.472  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2024-01-10 22:41:18.475  INFO 8064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-10 22:41:18.475  INFO 8064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2024-01-10 22:41:18.555  INFO 8064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-10 22:41:18.555  INFO 8064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 547 ms
+2024-01-10 22:41:18.610  INFO 8064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-10 22:41:18.617  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-01-10 22:41:18.623  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-01-10 22:41:18.623  INFO 8064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-01-10 22:41:18.855  INFO 8064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-10 22:41:18.856  INFO 8064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:41:18.954  WARN 8064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-10 22:41:19.025  WARN 8064 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-01-10 22:41:19.076  WARN 8064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-01-10 22:41:19.080  INFO 8064 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-10 22:41:19.103  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2024-01-10 22:41:19.110  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Started Application in 1.146 seconds (JVM running for 61.676)
+2024-01-10 22:41:19.112  INFO 8064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-10 22:41:24.416  INFO 8064 --- [http-nio-8100-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-10 22:41:24.417  INFO 8064 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-10 22:41:24.418  INFO 8064 --- [http-nio-8100-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-10 22:41:47.286  INFO 8064 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:41:47.287  INFO 8064 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-01-10 22:41:47.290  INFO 8064 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-01-10 22:41:47.396  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Starting Application using Java 17.0.9 on SAVARADEMOBW10 with PID 8064 (C:\Sagar_2023\JAVA_2023\SBApplication\target\classes started by svarade in C:\Sagar_2023\JAVA_2023\SBApplication)
+2024-01-10 22:41:47.397  INFO 8064 --- [restartedMain] com.SBApplication.Application            : No active profile set, falling back to 1 default profile: "default"
+2024-01-10 22:41:47.797  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-10 22:41:47.815  INFO 8064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2024-01-10 22:41:47.925  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+2024-01-10 22:41:47.927  INFO 8064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-10 22:41:47.927  INFO 8064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2024-01-10 22:41:47.967  INFO 8064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-10 22:41:47.967  INFO 8064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 567 ms
+2024-01-10 22:41:48.022  INFO 8064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-10 22:41:48.028  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-01-10 22:41:48.036  INFO 8064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-01-10 22:41:48.037  INFO 8064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-01-10 22:41:48.297  INFO 8064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-10 22:41:48.298  INFO 8064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-10 22:41:48.389  WARN 8064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-10 22:41:48.456  WARN 8064 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-01-10 22:41:48.525  WARN 8064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-01-10 22:41:48.530  INFO 8064 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-10 22:41:48.557  INFO 8064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+2024-01-10 22:41:48.564  INFO 8064 --- [restartedMain] com.SBApplication.Application            : Started Application in 1.207 seconds (JVM running for 91.131)
+2024-01-10 22:41:48.567  INFO 8064 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
