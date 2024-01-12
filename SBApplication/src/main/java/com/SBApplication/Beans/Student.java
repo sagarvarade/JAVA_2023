@@ -1,6 +1,5 @@
 package com.SBApplication.Beans;
 
-import java.util.ArrayList;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -30,7 +29,7 @@ public class Student {
 	@JoinColumn(name = "wardrobe_id", referencedColumnName = "id")
 	private WardRobe wardRobe;
 
-	@OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
 	Set<Course> courses;
 
 	public Integer getId() {
