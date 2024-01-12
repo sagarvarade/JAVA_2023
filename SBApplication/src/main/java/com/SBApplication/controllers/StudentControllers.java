@@ -38,6 +38,7 @@ public class StudentControllers {
 
 	@PostMapping("/save")
 	public Student saveStudent(@RequestBody Student student) {
+		System.out.println(student);
 		studentService.saveStudent(student);
 		return null;
 	}
