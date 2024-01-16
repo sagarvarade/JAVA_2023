@@ -14,16 +14,15 @@ public class HelloWorld {
 
 	@Autowired
 	private PropValues propValues;
-	
+
 	@GetMapping("/hello")
-	public String getHello()
-	{
+	public String getHello() {
 		return "Hello";
 	}
 
-	@RequestMapping(method = RequestMethod.GET,value = "getpropvalues")
+	@RequestMapping(method = RequestMethod.GET, value = "getpropvalues")
 	public String getPropValues() {
-		System.out.println(propValues.getName()+"  "+propValues.getSurname());
+		System.out.println(propValues.getName() + "  " + propValues.getSurname());
 		return propValues.toString();
 	}
 }
