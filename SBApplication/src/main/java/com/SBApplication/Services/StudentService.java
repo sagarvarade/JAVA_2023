@@ -1,7 +1,8 @@
 package com.SBApplication.Services;
 
 import java.util.List;
-import java.util.Set;
+
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -30,11 +31,10 @@ public class StudentService {
 
 	public Student getStudent(Integer id) {
 		Student std = studentRepository.findById(id).get();
-		//Course byStudentId = courseRepository.getByStudentId(id);
-		//std.setCourses(Set.of(byStudentId));
 		return std;
 	}
 
+	@Transactional
 	public List<Student> getAllStudents() {
 		return studentRepository.findAll();
 	}

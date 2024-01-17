@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.SBApplication.Beans.Hobby;
 import com.SBApplication.Beans.Student;
+import com.SBApplication.Repos.HobbyRepository;
+import com.SBApplication.Services.HobbyService;
 import com.SBApplication.Services.StudentService;
 
 @RestController
@@ -24,7 +27,10 @@ public class StudentControllers {
 	
 	@Autowired
 	StudentService studentService;
-
+	
+	@Autowired
+	HobbyService hobbyService;
+	
 	@GetMapping("/getall")
 	public List<Student> getAllStudents() {
 		return studentService.getAllStudents();
@@ -39,6 +45,10 @@ public class StudentControllers {
 	@PostMapping("/save")
 	public Student saveStudent(@RequestBody Student student) {
 		System.out.println(student);
+		for (Hobby hobby : student.getHobbies()) {
+			hobbyService.saveHobby(hobby);
+		}
+		
 		studentService.saveStudent(student);
 		return null;
 	}

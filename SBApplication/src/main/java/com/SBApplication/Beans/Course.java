@@ -1,6 +1,7 @@
 package com.SBApplication.Beans;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -17,8 +18,8 @@ public class Course {
 
 	private String course;
 
-	@ManyToOne
-	@JoinColumn(name = "student_id")
+	@ManyToOne(fetch = FetchType.LAZY, optional = true)
+	@JoinColumn(name = "student_id", referencedColumnName = "id", nullable = true)
 	private Student student;
 
 	public Long getId() {

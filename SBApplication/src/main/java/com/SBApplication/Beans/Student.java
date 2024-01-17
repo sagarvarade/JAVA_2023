@@ -1,13 +1,17 @@
 package com.SBApplication.Beans;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -29,9 +33,19 @@ public class Student {
 	@JoinColumn(name = "wardrobe_id", referencedColumnName = "id")
 	private WardRobe wardRobe;
 
-	@OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
-	Set<Course> courses;
+	@OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Course> courses = new HashSet<>();
 
+	
+	@ManyToMany
+    @JoinTable(
+        name = "student_hobby",
+        joinColumns = @JoinColumn(name = "student_id"),
+        inverseJoinColumns = @JoinColumn(name = "hobby_id")
+    )
+    private Set<Hobby> hobbies = new HashSet<>();
+	
+	
 	public Integer getId() {
 		return id;
 	}
@@ -88,8 +102,6 @@ public class Student {
 		this.wardRobe = wardRobe;
 	}
 
-	
-
 	public Set<Course> getCourses() {
 		return courses;
 	}
@@ -98,13 +110,19 @@ public class Student {
 		this.courses = courses;
 	}
 
+	public Set<Hobby> getHobbies() {
+		return hobbies;
+	}
+
+	public void setHobbies(Set<Hobby> hobbies) {
+		this.hobbies = hobbies;
+	}
+
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", fatherName=" + fatherName + ", surName=" + surName
 				+ ", clazz=" + clazz + ", standard=" + standard + ", wardRobe=" + wardRobe + ", courses=" + courses
-				+ "]";
+				+ ", hobbies=" + hobbies + "]";
 	}
-
-	
 
 }

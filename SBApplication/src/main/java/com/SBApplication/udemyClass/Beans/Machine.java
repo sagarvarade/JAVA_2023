@@ -3,9 +3,11 @@ package com.SBApplication.udemyClass.Beans;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Scope("prototype")
 public class Machine {
 
 	private String type;
