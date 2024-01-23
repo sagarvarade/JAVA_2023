@@ -15,22 +15,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.SBApplication.Beans.Hobby;
 import com.SBApplication.Beans.Student;
-import com.SBApplication.Repos.HobbyRepository;
 import com.SBApplication.Services.HobbyService;
 import com.SBApplication.Services.StudentService;
 
 @RestController
 @RequestMapping("student")
 public class StudentControllers {
- 
-	//@DeleteMapping ,@GetMapping , @PatchMapping ,@PostMapping, @PutMapping, @RequestMapping, 
-	
+
+	// @DeleteMapping ,@GetMapping , @PatchMapping ,@PostMapping, @PutMapping,
+	// @RequestMapping,
+
 	@Autowired
 	StudentService studentService;
-	
+
 	@Autowired
 	HobbyService hobbyService;
-	
+
 	@GetMapping("/getall")
 	public List<Student> getAllStudents() {
 		return studentService.getAllStudents();
@@ -39,16 +39,20 @@ public class StudentControllers {
 	@GetMapping("/getstudent/{id}")
 	@ResponseBody
 	public Student getStuedent(@PathVariable String id) {
-		return studentService.getStudent(Integer.valueOf(id));
+		if (studentService.getStudentById(Integer.valueOf(id)).isPresent()) {
+			Student student = studentService.getStudentById(Integer.valueOf(id)).get();
+			return student;
+		}
+		return new Student();
 	}
 
 	@PostMapping("/save")
 	public Student saveStudent(@RequestBody Student student) {
 		System.out.println(student);
-		for (Hobby hobby : student.getHobbies()) {
+		/*for (Hobby hobby : student.getHobbies()) {
 			hobbyService.saveHobby(hobby);
-		}
-		
+		}*/
+
 		studentService.saveStudent(student);
 		return null;
 	}
@@ -59,11 +63,11 @@ public class StudentControllers {
 		studentService.deleteStudentById(Integer.valueOf(id));
 		return "SUCCESS";
 	}
-	
+
 	@PatchMapping("/patch")
 	public String patchStudent(@RequestBody Student std) {
 		studentService.updateStudent(std);
 		return "Done";
 	}
-	
+
 }

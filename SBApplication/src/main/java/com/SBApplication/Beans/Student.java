@@ -36,7 +36,7 @@ public class Student {
 	@OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Course> courses = new HashSet<>();
 
-	
+	/*
 	@ManyToMany
     @JoinTable(
         name = "student_hobby",
@@ -44,7 +44,7 @@ public class Student {
         inverseJoinColumns = @JoinColumn(name = "hobby_id")
     )
     private Set<Hobby> hobbies = new HashSet<>();
-	
+	*/
 	
 	public Integer getId() {
 		return id;
@@ -109,7 +109,7 @@ public class Student {
 	public void setCourses(Set<Course> courses) {
 		this.courses = courses;
 	}
-
+/*
 	public Set<Hobby> getHobbies() {
 		return hobbies;
 	}
@@ -117,12 +117,12 @@ public class Student {
 	public void setHobbies(Set<Hobby> hobbies) {
 		this.hobbies = hobbies;
 	}
-
+*/
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", fatherName=" + fatherName + ", surName=" + surName
 				+ ", clazz=" + clazz + ", standard=" + standard + ", wardRobe=" + wardRobe + ", courses=" + courses
-				+ ", hobbies=" + hobbies + "]";
+				+ ", hobbies=]";
 	}
 
 }

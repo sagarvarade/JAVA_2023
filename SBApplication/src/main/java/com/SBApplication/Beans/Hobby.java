@@ -22,9 +22,9 @@ public class Hobby {
 	@Column(name = "hobby")
 	private String hobby;
 
-	@ManyToMany(mappedBy = "hobbies")
+	/*@ManyToMany(mappedBy = "hobbies")
     private Set<Student> students = new HashSet<>();
-
+	*/
 	public Long getId() {
 		return id;
 	}
@@ -40,7 +40,7 @@ public class Hobby {
 	public void setHobby(String hobby) {
 		this.hobby = hobby;
 	}
-
+/*
 	public Set<Student> getStudents() {
 		return students;
 	}
@@ -52,6 +52,6 @@ public class Hobby {
 	@Override
 	public String toString() {
 		return "Hobby [id=" + id + ", hobby=" + hobby + ", students=" + students + "]";
-	}
+	}*/
 
 }

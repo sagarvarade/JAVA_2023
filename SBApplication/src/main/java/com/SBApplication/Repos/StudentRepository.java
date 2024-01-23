@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.SBApplication.Beans.Student;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Integer>{
-
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+	//Student findById(int id);
 }
