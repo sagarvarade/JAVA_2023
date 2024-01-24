@@ -31,7 +31,6 @@ public class TestDataControllers {
 	@PostMapping("/savename")
 	public ResponseEntity<String> saveName(@RequestBody Name name) {
 		System.out.println(name);
-
 		ResponseEntity<String> entity2 = new ResponseEntity<String>("Saved", HttpStatus.CREATED);
 		return entity2;
 	}
