@@ -1,9 +1,9 @@
 package com.SpringClient.Clients;
 
+import java.net.URI;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,5 +23,16 @@ public class ReqRsClient {
 		return body.toString();
 	}
 	
+	public String postReq() {
+		String path=host+"api/users";
+		System.out.println(path);
+		String payLoad="{\r\n"
+				+ "    \"name\": \"morpheus\",\r\n"
+				+ "    \"job\": \"leader\"\r\n"
+				+ "}";
+		URI postForLocation = sbRestTemplate.postForLocation(path, payLoad);
+		System.out.println(postForLocation);
+		return ""; 
+	}
 	
 }

@@ -22,22 +22,23 @@ public class ProductServiceUsingThread {
 		stopWatch.start();
 
 		ProductInfoRunnable productInfoRunnable = new ProductInfoRunnable(productId);
-		Thread productInfoThread=new Thread(productInfoRunnable);
-		
-		ReviewRunnable reviewRunnable=new ReviewRunnable(productId);
-		Thread reviewThread=new Thread(reviewRunnable);
-		
+		Thread productInfoThread = new Thread(productInfoRunnable);
+
+		ReviewRunnable reviewRunnable = new ReviewRunnable(productId);
+		Thread reviewThread = new Thread(reviewRunnable);
+
 		productInfoThread.start();
 		reviewThread.start();
-		
+
 		productInfoThread.join();
 		reviewThread.join();
 		// Sequential changed to asynchronous
-		//ProductInfo productInfo = productInfoService.retrieveProductInfo(productId); // blocking call
-		//Review review = reviewService.retrieveReviews(productId); // blocking call
+		// ProductInfo productInfo = productInfoService.retrieveProductInfo(productId);
+		// // blocking call
+		// Review review = reviewService.retrieveReviews(productId); // blocking call
 		ProductInfo productInfo = productInfoRunnable.getProductInfo();
-		Review review=reviewRunnable.getReview();
-		
+		Review review = reviewRunnable.getReview();
+
 		stopWatch.stop();
 		log("Total Time Taken : " + stopWatch.getTime());
 		return new Product(productId, productInfo, review);
@@ -71,27 +72,25 @@ public class ProductServiceUsingThread {
 		public ProductInfo getProductInfo() {
 			return productInfo;
 		}
- 
+
 	}
-	
+
 	private class ReviewRunnable implements Runnable {
 		private String productId;
 		private Review review;
-		public ReviewRunnable(String productId)
-		{
-			this.productId=productId;
-		}
-		
-		
-		@Override
-		public void run() {
-			review=reviewService.retrieveReviews(productId);
+
+		public ReviewRunnable(String productId) {
+			this.productId = productId;
 		}
 
+		@Override
+		public void run() {
+			review = reviewService.retrieveReviews(productId);
+		}
 
 		public Review getReview() {
 			return review;
 		}
-		
+
 	}
 }

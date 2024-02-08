@@ -19,4 +19,9 @@ public class TestResQTemplate {
 		return reqRsClient.getReq();
 	}
 	
+	@GetMapping("/testpost")
+	public String testpost() {
+		return reqRsClient.postReq();
+	}
+	
 }
