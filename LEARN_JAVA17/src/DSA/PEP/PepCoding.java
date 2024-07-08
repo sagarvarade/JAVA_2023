@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class PepCoding {
 	
-	@Test
+	//@Test
 	public void tablePrint() {
 		for(int i=1;i<=10;i++)
 		{
